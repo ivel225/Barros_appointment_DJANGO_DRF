@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\User\Downloads\Barros_appointment_DJANGO_DRF-master\Barros_appointment_DJANGO_DRF-master\venv
+=======
+set VIRTUAL_ENV=C:\Users\imelm\Desktop\New folder (2)\DRF_APPOINTMENT\venv
+>>>>>>> f6d056cd00fe1b8e1340891964f1a1196d103d25
 
 if not defined PROMPT set PROMPT=$P$G
 

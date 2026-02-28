@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-qztvezs1)r_m%me-v_r(milszs&7zv6)il(gu67uzl#75xnhq8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+=======
+ALLOWED_HOSTS = []
+>>>>>>> f6d056cd00fe1b8e1340891964f1a1196d103d25
 
 
 # Application definition
@@ -39,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "myapp",
+<<<<<<< HEAD
     "corsheaders",
+=======
+>>>>>>> f6d056cd00fe1b8e1340891964f1a1196d103d25
     
 ]
 
@@ -51,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+<<<<<<< HEAD
     "corsheaders.middleware.CorsMiddleware",
 ]
 
@@ -60,6 +68,11 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
+=======
+]
+
+ROOT_URLCONF = 'appointment.urls'
+>>>>>>> f6d056cd00fe1b8e1340891964f1a1196d103d25
 
 TEMPLATES = [
     {
@@ -82,6 +95,7 @@ WSGI_APPLICATION = 'appointment.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+<<<<<<< HEAD
 
 
 
@@ -93,6 +107,12 @@ DATABASES = {
         'PASSWORD': 'november',
         'HOST': 'localhost',
         'PORT': '5432',
+=======
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+>>>>>>> f6d056cd00fe1b8e1340891964f1a1196d103d25
     }
 }
 

@@ -36,6 +36,7 @@ deactivate () {
 deactivate nondestructive
 
 # on Windows, a path can contain colons and backslashes and has to be converted:
+<<<<<<< HEAD
 if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
@@ -43,6 +44,15 @@ if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
 else
     # use the path as-is
     export VIRTUAL_ENV="C:\Users\User\Downloads\Barros_appointment_DJANGO_DRF-master\Barros_appointment_DJANGO_DRF-master\venv"
+=======
+if [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] ; then
+    # transform D:\path\to\venv to /d/path/to/venv on MSYS
+    # and to /cygdrive/d/path/to/venv on Cygwin
+    export VIRTUAL_ENV=$(cygpath "C:\Users\imelm\Desktop\New folder (2)\DRF_APPOINTMENT\venv")
+else
+    # use the path as-is
+    export VIRTUAL_ENV="C:\Users\imelm\Desktop\New folder (2)\DRF_APPOINTMENT\venv"
+>>>>>>> f6d056cd00fe1b8e1340891964f1a1196d103d25
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
